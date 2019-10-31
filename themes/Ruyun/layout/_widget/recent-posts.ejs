@@ -1,0 +1,12 @@
+<% if (site.posts.length){ %>
+  <h5><%= __('最近更新') %></h3>
+  <div class="widget">
+    <ul>
+      <% site.posts.sort('date', -1).limit(5).each(function(post){ %>
+        <li>
+          <a href="<%- url_for(post.path) %>"><%= post.title || '(no title)' %></a>
+        </li>
+      <% }) %>
+    </ul>
+  </div>
+<% } %>

@@ -1,0 +1,166 @@
+---
+layout: layout
+---
+<!-- Modify by Yu-Hsuan Yen -->
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <%- page.content %>
+                
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    <% if (page.prev){ %>
+                        <li class="previous">
+                            <a href="<%- config.root %><%- page.prev.path %>" data-toggle="tooltip" data-placement="top" title="<%- page.prev.title %>">&larr; 上一篇</a>
+                        </li>
+                    <% } %>
+                    <% if (page.next){ %>
+                        <li class="next">
+                            <a href="<%- config.root %><%- page.next.path %>" data-toggle="tooltip" data-placement="top" title="<%- page.next.title %>">下一篇 &rarr;</a>
+                        </li>
+                    <% } %>
+                </ul>
+
+                <br>
+
+                <!--打赏-->
+                <% if(config['reward']) { %>
+                    <div class="reward">
+                        <div class="reward-button">赏 <span class="reward-code"> 
+                            <span class="alipay-code"> <img class="alipay-img" src="<%= config['alipay'] %>"><b>支付宝打赏</b></span> 
+                            <span class="wechat-code"> <img class="wechat-img" src="<%= config['wechatpay'] %>"><b>微信打赏</b> </span>
+                            </span></div>
+                        <p class="reward-notice"><%= config['reward_comment'] %></p>
+                    </div>
+                <% } %>
+                <!--打赏-->
+
+                <br>
+                <!--分享-->
+                <% if(config['share']) { %>
+                    <div class="social-share"  data-wechat-qrcode-helper="" align="center"></div>
+                    <!--  css & js -->
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+                <% } %>
+                <!--分享-->
+                <br>                       
+                
+                <!-- require APlayer -->
+                <% if(config['metingjs']) { %>
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css">
+                <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/meting@1.2/dist/Meting.min.js"></script>
+
+                <div class="aplayer"
+                    data-id="<%= config['data-id'] %>"
+                    data-server="<%= config['data-server'] %>"
+                    data-type="<%= config['data-type'] %>"
+                    data-fixed="<%= config['data-fixed'] %>" >
+                </div>
+                <% } %>
+            </div>
+            
+            <!-- Tabe of Content -->
+            <%- partial('_partial/toc') %>
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                <% if(config['featured-tags']) { %>
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="<%= config.root %>tags/">标签</a></h5>
+                    <div class="tags">
+                       <% page.tags.forEach(function(tag){ %>
+                          <a class="tag" href="<%= config.root %>tags/#<%= tag.name %>" title="<%= tag.name %>"><%= tag.name %></a>
+                        <% }) %>
+                    </div>
+                </section>
+                <% }%>
+
+                <!-- Friends Blog -->
+				<!--
+                <% if(config.friends) { %>
+                <hr>
+                <h5>朋友们</h5>
+                <ul class="list-inline">
+
+                    <% config.friends.forEach(function(friend){ %>
+                        <li><a href="<%= friend.href %>" target="_blank"><%= friend.title %></a></li>
+                    <% }); %>
+                </ul>
+                <% }%>
+				-->
+            </div>
+        </div>
+    </div>
+</article>
+
+<% if(config['anchorjs']) { %>
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'left',
+          icon: ''
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+<% } %>
+
+<!-- chrome Firefox 中文锚点定位失效-->
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<!-- smooth scroll behavior polyfill  -->
+<script type="text/javascript" src="/js/smoothscroll.js"></script>
+<script>
+        $('#toc').on('click','a',function(a){
+            // var isChrome = window.navigator.userAgent.indexOf("Chrome") !== -1;
+            // console.log(window.navigator.userAgent,isChrome)
+                // if(isChrome) {
+                    // console.log(a.currentTarget.outerHTML);
+                    // console.log($(a.currentTarget).attr("href"));
+                    //跳转到指定锚点
+                    // document.getElementById(a.target.innerText.toLowerCase()).scrollIntoView(true);
+                    document.getElementById($(a.currentTarget).attr("href").replace("#","")).scrollIntoView({behavior: 'smooth' });
+                // }
+        })  
+</script>
