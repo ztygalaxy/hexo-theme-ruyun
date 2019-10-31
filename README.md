@@ -10,7 +10,7 @@
 ### 效果
 我的博客: [ztygalaxy](https://ztygalaxy.github.io)
 
-![](source/img/article/demo.png)
+![demo](demo.png)
 
 ### 用法
 
