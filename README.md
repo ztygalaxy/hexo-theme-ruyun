@@ -1,7 +1,8 @@
 #  如云 / hexo-theme-ruyun
+
 ### 如云，一个Hexo的个人博客主题。
 
-这个主题是基于[胡伟煌](http://www.huweihuang.com/)移植的[黄玄Jekyll博客主题](https://github.com/Huxpro/huxpro.github.io)修改而来。
+基于[胡伟煌](http://www.huweihuang.com/)移植的[黄玄Jekyll博客主题](https://github.com/Huxpro/huxpro.github.io)修改而来。
 
 我对它进行了汉化、删除了不必要的功能，并对主页样式进行了调整，以便更适合我的口味。
 
@@ -57,3 +58,5 @@ widgets:
 ### 相关
 
 [胡伟煌的博客](http://www.huweihuang.com/)    [黄玄的博客]( http://huangxuan.me/ )    [我的博客](https://ztygalaxy.github.io)
+
+相关阅读：[Hexo是怎么工作的](http://coderunthings.com/2017/08/20/howhexoworks/)
