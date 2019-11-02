@@ -1,5 +1,5 @@
-<p align="center">
-	<img width="100" height="100" src="source\img\logo_b.png" alt="logo">
+<p align="center" style="font-size: 100px">
+	☁
 </p>
 
 ##  如云 / hexo-theme-ruyun
