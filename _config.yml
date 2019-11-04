@@ -63,6 +63,8 @@ widgets:
 - friends-blog
 - archive
 - category
+- a-sentence
+- a-poem
 
 # widget behavior
 ## Archive

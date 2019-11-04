@@ -8,19 +8,20 @@
 
 基于[胡伟煌](http://www.huweihuang.com/)移植的[黄玄Jekyll博客主题](https://github.com/Huxpro/huxpro.github.io)修改而来。
 
-我对它进行了一些调整，以便更适合我的口味。
+我对它进行了一些调整和新增，以便更适合我的口味。
 
 ### 🎨 修改
 
-- **大道至简**：删除多处评论插件。
-- **口味**：主页、文章样式的修改。
-- **每天皆不同**：修改文章默认头图为每日必应壁纸。
+- **大道至简**：删除多项不必要的功能插件。
+- **口味**：主页、文章样式的修改，更简洁直观。
+- **每天皆不同**：修改文章默认头图为每日必应壁纸，增加[每日一句](https://hitokoto.cn/api)、[一诗](https://www.jinrishici.com)等widget插件。
 - **传承**：主要内容的汉化。
+- **早韭晚菘**：增加网易云音乐作为背景音乐模块，为你的文章、页面配一个更应景的BGM。
 
 ### 🌈 效果
-我的博客: [ztygalaxy](https://ztygalaxy.github.io)
+我的博客: [ztygalaxy](https://ztygalaxy.github.io)，部分插件未启用。
 
-![demo](demo.png)
+![demo](source/img/article/demo.png)
 
 ### 🔨 用法
 
@@ -31,12 +32,12 @@
 ```yml
 deploy:
   type: git
-  repository: 你的Repo名称
+  repository: 你的Repo名称，如ztygalaxy.github.io
   branch: master
   message: Update Content
 ```
 
-#### 2. 客制化.
+#### 2. 继续客制化.
 
 通过替换、修改`source/img/avatar/ironman.png`来配置头像。
 
@@ -52,17 +53,39 @@ sidebar-avatar: img/你的头像路径
 
 ```yml
 widgets:
-- featured-tags
-- short-about
-#- recent-posts
-#- friends-blog
-- archive
-- category
+- featured-tags		# 标签
+- short-about		# 简介
+#- recent-posts		# 最新文章
+#- friends-blog		# 友链
+- archive			# 归档
+- category			# 分类
+- a-sentence		# 每日一句
+- a-poem			# 每日诗句
 ```
 
 钢铁侠的回到顶部，可在`css/image`中替换。
 
-其他样式，可以在浏览器中检查元素到对应文件修改，例如`layout`文件夹下，它们的名字作用都很明了。
+其他样式和资源文件，可以在浏览器中检查元素到对应文件修改，例如`layout`文件夹下，它们的名字作用都很明了。
+
+#### 3. 文章撰写与参数说明
+
+你应该非常熟悉hexo文章的生成撰写，也可以在给出的样例文章基础上修改，参数说明如下。
+
+```markdown
+---
+title: 					# 文章名称
+subtitle:				# 子标题
+date:					# 创建日期
+catalog: true			# 是否使用目录
+header-img:				# 头图地址
+tags:					# 标签
+toc_nav_num: true		# 是否使用目录
+musicid: 				# 如果需要背景音乐，请填写其网易云id
+musicauto: 1			# 是否需要自动播放，默认为1
+top: 0					# 是否需要置顶
+---
+```
+
 
 ### 👦 相关
 

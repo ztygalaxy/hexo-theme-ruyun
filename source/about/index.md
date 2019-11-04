@@ -6,6 +6,8 @@ description: "你是我的梦想"
 header-img: "/img/header_img/archives-widget.jpg"
 aplayer: false
 fixed: false
+musicid: 86205
+musicauto: 1
 ---
 
 关于如云
