@@ -17,6 +17,7 @@
 - **每天皆不同**：修改文章默认头图为每日必应壁纸，增加[每日一句](https://hitokoto.cn/api)、[一诗](https://www.jinrishici.com)等widget插件。
 - **传承**：主要内容的汉化。
 - **早韭晚菘**：增加网易云音乐作为背景音乐模块，为你的文章、页面配一个更应景的BGM。
+- **ICP**：一键设置网站ICP备案号、公安部备案号。
 
 ### 🌈 效果
 我的博客: [ztygalaxy](https://ztygalaxy.github.io)，部分插件未启用。
@@ -62,6 +63,8 @@ widgets:
 - a-sentence		# 每日一句
 - a-poem			# 每日诗句
 ```
+
+如果你的网站需要放置备案信息，填写`icp`。
 
 钢铁侠的回到顶部，可在`css/image`中替换。
 

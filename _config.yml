@@ -29,7 +29,8 @@ header-img: /img/header_img/home.jpg
 article-img: https://api.dujin.org/bing/1920.php
 404-img: /img/header_img/404.png
 signature: false #show signature
-signature-img: img/signature/BeanTechSign-white.png 
+signature-img: img/signature/BeanTechSign-white.png
+icp: 浙ICP备000001号  #chinese icp
 
 
 # SNS settings
