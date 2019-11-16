@@ -17,12 +17,13 @@
 - **每天皆不同**：修改文章默认头图为每日必应壁纸，增加[每日一句](https://hitokoto.cn/api)、[一诗](https://www.jinrishici.com)等widget插件。
 - **传承**：主要内容的汉化。
 - **早韭晚菘**：增加网易云音乐作为背景音乐模块，为你的文章、页面配一个更应景的BGM。
-- **ICP**：一键设置网站ICP备案号、公安部备案号。
+- **一碗米粉**：放置你自己的公众号、赞赏码等二维码。
+- **一步合法**：一键设置备案网站ICP备案号、公安部备案号。
 
 ### 🌈 效果
 我的博客: [ztygalaxy](https://ztygalaxy.github.io)，部分插件未启用。
 
-![demo](https://pic.tyzhang.top/images/2019/11/08/demo.png)
+![demo](https://pic.tyzhang.top/images/2019/11/16/screencapture-127-0-0-1-4000-2019-11-16-14_51_54.png)
 
 ### 🔨 用法
 
@@ -62,6 +63,7 @@ widgets:
 - category			# 分类
 - a-sentence		# 每日一句
 - a-poem			# 每日诗句
+- qrcode			# 二维码展示，/img/avatar/qrcode.png
 ```
 
 如果你的网站需要放置备案信息，填写`icp`。

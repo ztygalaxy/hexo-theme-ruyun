@@ -66,6 +66,7 @@ widgets:
 - category
 - a-sentence
 - a-poem
+- qrcode
 
 # widget behavior
 ## Archive
