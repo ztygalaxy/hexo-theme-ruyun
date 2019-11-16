@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="https://pic.tyzhang.top/images/2019/11/08/logo_b.png" width="100px"/>
+	<img src="source/img/logo_b.png" width="100px"/>
 </p>
 
 ##  如云 / hexo-theme-ruyun
@@ -23,7 +23,7 @@
 ### 🌈 效果
 我的博客: [ztygalaxy](https://ztygalaxy.github.io)，部分插件未启用。
 
-![demo](https://pic.tyzhang.top/images/2019/11/16/screencapture-127-0-0-1-4000-2019-11-16-14_51_54.png)
+![demo](source/img/article/demo.png)
 
 ### 🔨 用法
 
