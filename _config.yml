@@ -2,7 +2,7 @@
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
-# Site
+# 网站信息
 title: 如云
 subtitle: 那就做如云
 author: 张天宇
@@ -10,17 +10,15 @@ language:
 timezone:
 
 # URL
-## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: your url      # Note: don't forget to modify the CNAME file to your url
+url: tyzhang.top      # 不要忘记修改CNAME文件
 root: /
-# permalink: :year/:month/:day/:title/
 permalink: :category/:title/
 permalink_defaults:
   lang: en
 
-#Custom Setting Start
+# 以下是个性化设置
 
-# Site settings
+# 网站设置
 SEOTitle: 如云的博客 | Ruyun Blog
 email: your-email
 description: ""
@@ -30,11 +28,12 @@ article-img: https://api.dujin.org/bing/1920.php
 404-img: /img/header_img/404.png
 signature: false #show signature
 signature-img: img/signature/BeanTechSign-white.png
-icp: 浙ICP备000001号  #chinese icp
-beian: 浙公网安备 33011802000001号 # police icp
+icp: 浙ICP备000001号  # 网站备案号
+beian: 浙公网安备 33011802000001号 # 公安备案
+beiannum: 33011802000001 # 填写公安备案的备案号以便生成正确的链接
 
 
-# SNS settings
+# 社交网络设置
 RSS: true
 weibo_username:     Demonbaneen
 zhihu_username: zhihu_xx
@@ -43,21 +42,14 @@ twitter_username:   Demonbane_x
 facebook_username:  xx
 bilibili_username:  xx
 
-# Build settings
+# 编译设置
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
-# Analytics settings
-#Baidu Analytics
-ba_track_id: xxx
-# Google Analytics
-ga_track_id: 'UA-XXXXXXXX-X'          # Format: UA-xxxxxx-xx
-ga_domain: yoursite
 
-
-# Sidebar settings
-sidebar: true                       # whether or not using Sidebar.
+# 侧边栏设置
+sidebar: true                       # 是否使用侧边栏
 sidebar-about-description: "Do something really cool and make the world a better place."
-sidebar-avatar: /img/avatar/ironman.png      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/avatar/ironman.png      # 回到顶部图标，使用绝对路径
 widgets:
 - featured-tags
 - short-about
@@ -161,23 +153,6 @@ markdown:
     typographer: true
     quotes: '“”‘’'
   
-# Extensions
-## Plugins: https://hexo.io/plugins/
-
-# recommended-posts
-# reference: https://github.com/huiwang/hexo-recommended-posts
-# recommended_posts:
-#   server: https://api.truelaurel.com #后端推荐服务器地址
-#   timeoutInMillis: 10000 #服务时长，超过此时长，则使用离线推荐模式
-#   internalLinks: 3 #内部文章数量
-#   externalLinks: 0 #外部文章数量
-#   autoDisplay: true, #自动在文章底部显示推荐文章
-#   titleHtml: <h2>推荐文章<span style="font-size:0.45em; color:gray"></span></h2> #自定义标题
-
-# hexo-tag-aplayer
-# reference: https://github.com/MoePlayer/hexo-tag-aplayer
-# aplayer:
-#   meting: true
 
 # MeingJS support for Aplayer
 # reference: https://github.com/metowolf/MetingJS & https://github.com/MoePlayer/APlayer
