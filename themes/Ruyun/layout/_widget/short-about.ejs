@@ -54,6 +54,17 @@
                     </a>
                 </li>
             <% } %>
+			
+			<% if (config.bilibili_username) { %>
+                <li>
+                    <a target="_blank" href="https://space.bilibili.com/<%= config.bilibili_username %>">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa  fa-stack-1x fa-inverse"><b>B</b></i>
+                        </span>
+                    </a>
+                </li>
+            <% } %>
 
             <% if (config.facebook_username) { %>
                 <li>
