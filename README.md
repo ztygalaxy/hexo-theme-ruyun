@@ -79,7 +79,7 @@ widgets:
 ```markdown
 ---
 title: 					# 文章名称
-subtitle:				# 子标题
+subtitle:				# 子标题，在博文列表显示简介
 date:					# 创建日期
 catalog: true			# 是否使用目录
 header-img:				# 头图地址
