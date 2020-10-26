@@ -6,9 +6,7 @@
 
 一个Hexo个人博客主题。
 
-基于[胡伟煌](http://www.huweihuang.com/)移植的[黄玄Jekyll博客主题](https://github.com/Huxpro/huxpro.github.io)修改而来。
-
-我对它进行了一些调整和新增，以便更适合我的口味。
+基于[胡伟煌](http://www.huweihuang.com/)移植的[黄玄Jekyll博客主题](https://github.com/Huxpro/huxpro.github.io)修改而来。我对它进行了一些调整和新增，以便更适合我的口味。
 
 ### 🎨 修改
 
@@ -19,6 +17,7 @@
 - **早韭晚菘**：增加网易云音乐作为背景音乐模块，为你的文章、页面配一个更应景的BGM。
 - **一碗米粉**：放置你自己的公众号、赞赏码等二维码。
 - **备案轻松**：一键设置备案网站ICP备案号、公安部备案号。
+- **LaTex**：增加对 LaTex 公式的渲染、正常显示。
 - **人人自媒体**：哔哩哔哩行不行？太行了。
 
 ### 🌈 效果
