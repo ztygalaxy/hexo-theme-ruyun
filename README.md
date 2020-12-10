@@ -4,15 +4,15 @@
 
 ##  如云 / hexo-theme-ruyun
 
-一个Hexo个人博客主题。
+一个 Hexo 个人博客主题。
 
-基于[胡伟煌](http://www.huweihuang.com/)移植的[黄玄Jekyll博客主题](https://github.com/Huxpro/huxpro.github.io)修改而来。我对它进行了一些调整和新增，以便更适合我的口味。
+基于[胡伟煌](http://www.huweihuang.com/)移植的[黄玄 Jekyll 博客主题](https://github.com/Huxpro/huxpro.github.io)修改而来。我对它进行了一些调整和新增，以便更适合我的口味。
 
 ### 🎨 修改
 
 - **大道至简**：删除多项不必要的功能插件。
 - **我的口味**：主页、文章样式的修改，更简洁直观。
-- **每天皆不同**：唯一的不同，就是处处皆不同。修改文章默认头图为每日必应壁纸，增加[每日一句](https://hitokoto.cn/api)、[一诗](https://www.jinrishici.com)等widget插件。
+- **每天皆不同**：唯一的不同，就是处处皆不同。修改文章默认头图为每日必应壁纸，增加[每日一句](https://hitokoto.cn/api)、[一诗](https://www.jinrishici.com)等 widget 插件。
 - **古法传承**：主要内容的汉化。
 - **早韭晚菘**：增加网易云音乐作为背景音乐模块，为你的文章、页面配一个更应景的BGM。
 - **一碗米粉**：放置你自己的公众号、赞赏码等二维码。
@@ -74,9 +74,9 @@ widgets:
 
 #### 3. 文章撰写与参数说明
 
-你应该非常熟悉hexo文章的生成撰写，也可以在给出的样例文章基础上修改，参数说明如下。
+你应该非常熟悉 hexo 文章的生成撰写，也可以在给出的样例文章基础上修改，参数说明如下。
 
-```markdown
+```yml
 ---
 title: 					# 文章名称
 subtitle:				# 子标题，在博文列表显示简介
