@@ -41,6 +41,7 @@ github_username: github_xx
 twitter_username:   Demonbane_x
 facebook_username:  xx
 bilibili_username:  xx
+okjike_username:  XX
 
 # 编译设置
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
