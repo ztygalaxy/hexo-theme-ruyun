@@ -52,10 +52,11 @@ sidebar: true                       # 是否使用侧边栏
 sidebar-about-description: "Do something really cool and make the world a better place."
 sidebar-avatar: /img/avatar/ironman.png      # 回到顶部图标，使用绝对路径
 widgets:
+- search
 - featured-tags
 - short-about
-- recent-posts
 - friends-blog
+- recent-posts
 - archive
 - category
 - a-sentence

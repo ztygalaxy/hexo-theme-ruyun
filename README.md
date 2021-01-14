@@ -1,6 +1,7 @@
 <p align="center">
-	<img src="source/img/logo_b.png" width="100px"/>
+	<img src="https://pic.tyzhang.top/images/2021/01/14/logo_b.png" width="100px"/>
 </p>
+
 
 ##  如云 / hexo-theme-ruyun
 
@@ -18,12 +19,13 @@
 - **一碗米粉**：放置你自己的公众号、赞赏码等二维码。
 - **备案轻松**：一键设置备案网站ICP备案号、公安部备案号。
 - **LaTex**：增加对 LaTex 公式的渲染、正常显示。
-- **社交自定义**：增加哔哩哔哩和即刻社交页面展示。
+- **社交加加**：增加知乎、哔哩哔哩和即刻社交页面展示。
+- **搜索到位**：依托[Dogedoge](https://www.dogedoge.com/) 实现站内检索功能。
 
 ### 🌈 效果
 我的博客: [ztygalaxy](https://ztygalaxy.github.io)，部分插件未启用。
 
-![demo](source/img/article/demo.png)
+![demo](https://pic.tyzhang.top/images/2021/01/14/demo.png)
 
 ### 🔨 用法
 
@@ -64,6 +66,7 @@ widgets:
 - a-sentence		# 每日一句
 - a-poem			# 每日诗句
 - qrcode			# 二维码展示，/img/avatar/qrcode.png
+- search			# 搜索功能
 ```
 
 如果你的网站需要放置备案信息，填写`icp`。

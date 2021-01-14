@@ -4,22 +4,10 @@
 <!-- Head tag -->
 <%- partial('_partial/head') %>
 
-<style type="text/css">
-body.night{
-    background-color: #40444c;
-    color: #aaa;
-}
-body.night img {
-    filter: brightness(60%);
-}
-huxblog_navbar.night{
-	color: #aaa;
-	background-color: #40444c;
-}
-</style>
 
 <!-- hack iOS CSS :active style -->
-<body ontouchstart=""  class="<?php echo($_COOKIE['night'] == '1' ? 'night' : ''); ?>">
+<!-- <body ontouchstart=""  class="<?php echo($_COOKIE['night'] == '1' ? '' : ''); ?>"> -->
+<body ontouchstart="">
 	<%- partial('_partial/header',{cache: true}) %>
 	
     <%- partial('_partial/nav',{cache: true}) %>
@@ -35,41 +23,6 @@ huxblog_navbar.night{
 	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
     <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
 	<script  type="text/javascript">
-	function switchNightMode(){
-		var night = document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1") || '0';
-		if(night == '0'){
-			document.body.classList.add('night');
-			document.cookie = "night=1;path=/"
-			console.log('夜间模式开启');
-		}else{
-			document.body.classList.remove('night');
-			document.cookie = "night=0;path=/"
-			console.log('夜间模式关闭');
-		}
-	}
-	(function(){
-		if(document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1") === ''){
-			if(new Date().getHours() > 24 || new Date().getHours() < 0){
-				document.body.classList.add('night');
-				document.cookie = "night=1;path=/";
-				var aaa = document.getElementsById("huxblog_navbar");
-				a.classList.add('night');
-				console.log('夜间模式开启');
-			}else{
-				document.body.classList.remove('night');
-				document.cookie = "night=0;path=/";
-				console.log('夜间模式关闭');
-			}
-		}else{
-			var night = document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1") || '0';
-			if(night == '0'){
-				document.body.classList.remove('night');
-			}else if(night == '1'){
-				document.body.classList.add('night');
-			}
-		}
-	})();
-</script>
 <!-- Image to hack wechat -->
 <img src="<%= config['url'] %><%= config['root'] %>img/icon_wechat.png" width="0" height="0" />
 <!-- Migrate from head to bottom, no longer block render and still work -->
