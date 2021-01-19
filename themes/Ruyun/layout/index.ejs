@@ -26,11 +26,13 @@ layout: page
             <%- post.subtitle || "" %>
         </h3>
 		-->
+		<!--
         <div class="post-content-preview">
 			<% if (!post.subtitle){%>
             <%- truncate(strip_html(post.content), {length: 50, omission: '...'}) %>...
 			<% } %>
         </div>
+		-->
     </a>
     <% if (config.home_posts_tag){%>
         <p class="post-meta" style="margin: 10px 0;">
