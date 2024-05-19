@@ -10,7 +10,7 @@ language:
 timezone:
 
 # URL
-url: tyzhang.top      # 不要忘记修改CNAME文件
+url: https://tyzhang.top      # 不要忘记修改CNAME文件
 root: /
 permalink: :category/:title/
 permalink_defaults:
@@ -187,6 +187,19 @@ theme: Ruyun
 #sitemap
 sitemap:
   path: sitemap.xml
+
+# Feed
+feed:
+  enable: true
+  type: atom
+  path: feed.xml
+  limit: 20
+  hub: https://tyzhang.top
+  content: true
+  order_by: -date
+  icon: /img/logo.png
+  autodiscovery: true
+  template: ./source/uploads/atom_template.xml
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

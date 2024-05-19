@@ -75,6 +75,8 @@ widgets:
 
 其他样式和资源文件，可以在浏览器中检查元素到对应文件修改，例如 `layout` 文件夹下，它们的名字作用都很明了。
 
+在 `feed` 中配置 RSS 订阅，[参数说明](https://github.com/hexojs/hexo-generator-feed#options).
+
 #### 3. 文章撰写与参数说明
 
 你应该非常熟悉 hexo 文章的生成撰写，也可以在给出的样例文章基础上修改，参数说明如下。

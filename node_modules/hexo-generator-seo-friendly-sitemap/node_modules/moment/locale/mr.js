@@ -1,14 +1,11 @@
 //! moment.js locale configuration
-//! locale : Marathi (mr)
-//! author : Harshad Kale : https://github.com/kalehv
-//! author : Vivek Athalye : https://github.com/vnathalye
 
 ;(function (global, factory) {
    typeof exports === 'object' && typeof module !== 'undefined'
        && typeof require === 'function' ? factory(require('../moment')) :
-   typeof define === 'function' && define.amd ? define(['moment'], factory) :
+   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
-}(this, function (moment) { 'use strict';
+}(this, (function (moment) { 'use strict';
 
 
     var symbolMap = {
@@ -42,6 +39,7 @@
         if (withoutSuffix) {
             switch (string) {
                 case 's': output = 'काही सेकंद'; break;
+                case 'ss': output = '%d सेकंद'; break;
                 case 'm': output = 'एक मिनिट'; break;
                 case 'mm': output = '%d मिनिटे'; break;
                 case 'h': output = 'एक तास'; break;
@@ -57,6 +55,7 @@
         else {
             switch (string) {
                 case 's': output = 'काही सेकंदां'; break;
+                case 'ss': output = '%d सेकंदां'; break;
                 case 'm': output = 'एका मिनिटा'; break;
                 case 'mm': output = '%d मिनिटां'; break;
                 case 'h': output = 'एका तासा'; break;
@@ -75,6 +74,7 @@
     var mr = moment.defineLocale('mr', {
         months : 'जानेवारी_फेब्रुवारी_मार्च_एप्रिल_मे_जून_जुलै_ऑगस्ट_सप्टेंबर_ऑक्टोबर_नोव्हेंबर_डिसेंबर'.split('_'),
         monthsShort: 'जाने._फेब्रु._मार्च._एप्रि._मे._जून._जुलै._ऑग._सप्टें._ऑक्टो._नोव्हें._डिसें.'.split('_'),
+        monthsParseExact : true,
         weekdays : 'रविवार_सोमवार_मंगळवार_बुधवार_गुरूवार_शुक्रवार_शनिवार'.split('_'),
         weekdaysShort : 'रवि_सोम_मंगळ_बुध_गुरू_शुक्र_शनि'.split('_'),
         weekdaysMin : 'र_सो_मं_बु_गु_शु_श'.split('_'),
@@ -98,6 +98,7 @@
             future: '%sमध्ये',
             past: '%sपूर्वी',
             s: relativeTimeMr,
+            ss: relativeTimeMr,
             m: relativeTimeMr,
             mm: relativeTimeMr,
             h: relativeTimeMr,
@@ -149,10 +150,10 @@
         },
         week : {
             dow : 0, // Sunday is the first day of the week.
-            doy : 6  // The week that contains Jan 1st is the first week of the year.
+            doy : 6  // The week that contains Jan 6th is the first week of the year.
         }
     });
 
     return mr;
 
-}));
+})));
