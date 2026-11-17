@@ -28,9 +28,9 @@ article-img: https://api.dujin.org/bing/1920.php
 404-img: /img/header_img/404.png
 signature: false #show signature
 signature-img: img/signature/BeanTechSign-white.png
-icp: 浙ICP备000001号  # 网站备案号
-beian: 浙公网安备 33011802000001号 # 公安备案
-beiannum: 33011802000001 # 填写公安备案的备案号以便生成正确的链接
+icp: # 浙ICP备000001号  # 网站备案号
+beian: # 浙公网安备 33011802000001号
+beiannum: # 33011802000001（用于生成公安备案链接）
 
 
 # 社交网络设置

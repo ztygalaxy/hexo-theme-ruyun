@@ -104,15 +104,15 @@
                     <br>
                     Theme by <a href="http://www.huweihuang.com">Huwei Huang</a>
                     re-Ported by <a href="https://github.com/ztygalaxy">ztygalaxy</a>
-					<% if (config.icp) { %>
-					<br>
-                    <a href="http://beian.miit.gov.cn/" style="color: gray"><%= config.icp %></a>
-					<br>
-					<!-- <p class="copyright text-muted" style="margin-top: 5px"> -->
-						<img src="../../img/备案图标.png"/>
-						<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=<%= config.beiannum %>" style="color: gray"><%= config.beian %></a>
-					<!-- </p> -->
-					<% } %>
+                    <% if (config.icp) { %>
+                        <br>
+                        <a href="http://beian.miit.gov.cn/" style="color: gray"><%= config.icp %></a>
+                    <% } %>
+                    <% if (config.beian && config.beiannum) { %>
+                        <br>
+                        <img src="../../img/备案图标.png"/>
+                        <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=<%= config.beiannum %>" style="color: gray"><%= config.beian %></a>
+                    <% } %>
                 </p>
             </div>
         </div>
